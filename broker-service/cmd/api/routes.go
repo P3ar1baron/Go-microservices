@@ -12,6 +12,7 @@ func routes() http.Handler {
 
 	mux.Use(cors.Handler(cors.Options{
 		AllowedOrigins: []string{"https://*", "http://*"},
+		AllowedMethods: []string{"GET", "POST", "PUT", "DELETE"},
 	}))
 
 }
